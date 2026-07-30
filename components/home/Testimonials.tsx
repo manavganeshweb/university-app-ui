@@ -1,0 +1,7 @@
+
+'use client'
+import { ChevronLeft, ChevronRight, Quote } from 'lucide-react'
+import { useState } from 'react'
+import { testimonials } from '../../lib/data'
+import { SectionTitle } from '../section-title'
+export function Testimonials(){const [index,setIndex]=useState(0);const testimonial=testimonials[index];const move=(dir:number)=>setIndex((index+dir+testimonials.length)%testimonials.length);return <section className="section-space bg-brand-50"><div className="container-page"><SectionTitle label="#Learner stories" title="What our learners say" copy="Real experiences from people who made a confident decision."/><article className="relative mx-auto max-w-3xl rounded-2xl bg-white p-8 text-center shadow-card sm:p-12"><Quote className="mx-auto text-brand-300" size={42} fill="currentColor"/><p className="mt-6 text-lg font-medium leading-8 text-zinc-700 sm:text-xl">“{testimonial.quote}”</p><h3 className="mt-7 font-extrabold">{testimonial.name}</h3><p className="mt-1 text-sm text-zinc-500">{testimonial.role}</p><div className="absolute bottom-5 right-5 flex gap-2"><button aria-label="Previous testimonial" onClick={()=>move(-1)} className="grid h-9 w-9 place-items-center rounded-full border hover:bg-brand-50"><ChevronLeft size={17}/></button><button aria-label="Next testimonial" onClick={()=>move(1)} className="grid h-9 w-9 place-items-center rounded-full border hover:bg-brand-50"><ChevronRight size={17}/></button></div></article></div></section>}
