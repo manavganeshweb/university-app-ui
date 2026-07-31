@@ -1,6 +1,5 @@
 import { Header } from "../components/Header"
 import Footer from "../components/Footer"
-
 import { Hero } from "../components/home/Hero"
 import { PartnerRail } from "../components/home/Partner"
 import { Programs } from "../components/home/Program"
@@ -11,6 +10,8 @@ import { Compare } from "../components/home/Compare"
 import { Testimonials } from "../components/home/Testimonials"
 import { Colleges } from "../components/home/Colleges"
 import { BlogSection } from "../components/home/BlogSection"
+import UniversityCloud from "../components/home/UniversityCloud"
+import { types } from "util"
 
 
 export default function HomePage(){
@@ -58,6 +59,8 @@ overflow-hidden
 {/* Trending Colleges */}
 
 <Trending/>
+
+<UniversityCloud/>
 
 <Colleges/>
 

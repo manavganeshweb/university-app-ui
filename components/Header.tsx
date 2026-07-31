@@ -27,11 +27,10 @@ const navItems = [
   },
 
   {
-    href:"#Universities",
+    href:"/universities",
     label:"Top universities"
   }
 ];
-
 
 
 export function Header(){
