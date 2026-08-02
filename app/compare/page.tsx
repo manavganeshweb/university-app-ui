@@ -17,6 +17,8 @@ import {
 useCompare
 }
 from "../../context/CourseCompareContext";
+import { Header } from "../../components/Header";
+import Footer from "../../components/Footer";
 
 
 
@@ -73,6 +75,9 @@ const fields=[
 
 
 return (
+
+    <>
+    <Header/>
 
 <div className="
 min-h-screen
@@ -307,6 +312,8 @@ Clear Comparison
 
 
 </div>
+<Footer/>
+</>
 
 )
 

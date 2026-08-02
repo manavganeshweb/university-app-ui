@@ -3,6 +3,8 @@ import { courseProviders } from "../../../lib/courseProviders";
 import ProviderCard from "../../../components/courses/ProviderCard";
 import { courses } from "../../../lib/courses";
 import ProgramSidebar from "../../../components/home/ProgramSidebar";
+import { Header } from "../../../components/Header";
+import Footer from "../../../components/Footer";
 export default async function CoursePage({
     
 
@@ -37,6 +39,7 @@ notFound();
 return (
 
 <>
+<Header/>
 
 <main className="
 min-h-screen
@@ -307,6 +310,7 @@ course={course}
 
 
 </main>
+<Footer/>
 
 
 </>
